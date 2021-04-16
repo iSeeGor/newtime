@@ -1,0 +1,1376 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta charset="UTF-8">
+	<!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="format-detection" content="telephone=no">
+	<title>NewTime</title>
+	<meta name="description" content="">
+	<meta name="keywords" content="">
+
+	<!--== Preload Fonts -->
+	<link rel="preload" href="fonts/OpenSans-Regular.woff2" as="font" type="font/woff" crossorigin="">
+	<link rel="preload" href="fonts/OpenSans-SemiBold.woff2" as="font" type="font/woff" crossorigin="">
+	<link rel="preload" href="fonts/OpenSans-Bold.woff2" as="font" type="font/woff" crossorigin="">
+
+
+	<!--== favicon  -->
+	<link rel="apple-touch-icon" sizes="180x180" href="favicon//apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="favicon//favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="favicon//favicon-16x16.png">
+	<link rel="manifest" href="favicon//site.webmanifest">
+	<link rel="mask-icon" href="favicon//safari-pinned-tab.svg" color="#5bbad5">
+	<meta name="msapplication-TileColor" content="#da532c">
+	<meta name="theme-color" content="#ffffff">
+
+	<link rel="stylesheet" href="css/vendor.css">
+	<link rel="stylesheet" href="css/index.css">
+</head>
+
+<body class="body" id="body">
+	<div class="site">
+
+		<header class="header site__header">
+			<div class="header__container">
+				<div class="header__logo">
+					<a href="front-page.html" class="site-logo">
+						<img src="images/new-time-logo.svg" alt="New Time Investment Logo" width="151">
+					</a>
+				</div>
+				
+
+				<div class="header__main">
+					<div class="header__contacts">
+						<div class="header__contacts-item _messengers">
+							<div class="messengers">
+								<a class="messengers__item _telegram" href="tg://resolve?domain=NikName">
+									<svg class="messengers__icon _telegram">
+										<use xlink:href="symbol/sprite.svg#telegram"></use>
+									</svg>
+								</a>
+								<a class="messengers__item _whatsapp" href="https://wa.me/380950000000?text=Здравствуйте.%20Ваше%20сообщение%20для%20менеджера.">
+									<svg class="messengers__icon _whatsapp">
+										<use xlink:href="symbol/sprite.svg#whatsapp"></use>
+									</svg>
+								</a>
+								<a class="messengers__item _viber" href="viber://add?number=380950000000">
+									<svg class="messengers__icon _viber">
+										<use xlink:href="symbol/sprite.svg#viber"></use>
+									</svg>
+								</a>
+							</div>
+						</div>
+						<div class="header__contacts-item _phones">
+							<div class="phone-dropdown">
+								<div class="phone-dropdown__header">
+									<a class="phone-dropdown__link" href="tel:+90000000000">
+										<img class="phone-dropdown__icon" src="icons/flag-turkey.svg" alt="Flag Turkey" width="26">
+										+99 999 99 99 999
+									</a>
+									<button class="button phone-dropdown__button"></button>
+								</div>
+								
+								<div class="phone-dropdown__list">
+									<a class="phone-dropdown__link" href="tel:+90000000000">
+										<img class="phone-dropdown__icon" src="icons/flag-ukraine.svg" alt="Flag Ukrain" width="26">
+										+99 999 99 99 999
+									</a>
+									<a class="phone-dropdown__link" href="tel:+90000000000">
+										<img class="phone-dropdown__icon" src="icons/flag-russia.svg" alt="Flag Russia" width="26">
+										+99 999 99 99 999
+									</a>
+								</div>
+							</div>
+						</div>
+						<div class="header__contacts-item">
+							<a class="header__email" href="mailto:info@newtimeinvestment.com">
+								<img src="icons/email.svg" alt="icon email" width="21">
+								info@newtimeinvestment.com
+							</a>
+						</div>
+					</div>
+					<div class="header__nav">
+						<nav class="header__main-nav main-nav">
+							<div class="main-nav__container">
+								<a class="main-nav__link _active" href="front-page.html" >Главная</a>
+								<a class="main-nav__link" href="catalog.html" >Католог недвижимости</a>
+								<a class="main-nav__link" href="about.html" >О компании</a>
+								<a class="main-nav__link" href="for-clients.html" >Покупателям</a>
+								<a class="main-nav__link" href="testimonials.html" >Отзывы</a>
+								<a class="main-nav__link" href="blog.html" >Блог</a>
+							</div>
+						</nav>
+					</div>
+				</div>
+
+				<div class="header__currency">
+					<div class="currency-dropdown">
+						<button class="button currency-dropdown__button">EUR</button>
+						<div class="currency-dropdown__list">
+							<button class="button currency-dropdown__item">RUB</button>
+							<button class="button currency-dropdown__item">USD</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</header>
+
+		<aside class="aside site__aside">
+			<div class="aside__container">
+				<button class="button to-top">
+					<svg class="_icon">
+						<use xlink:href="symbol/sprite.svg#arrow-angel"></use>
+					</svg>
+				</button>
+
+				<a class="button aside__button _callback" href="#modal-main" data-fancybox="modal">
+					<span class="icon">
+						<svg class="svg">
+							<use xlink:href="symbol/sprite.svg#phone"></use>
+						</svg>
+					</span>
+					Перезвоните мне
+				</a>
+
+				<a class="button aside__button _favorits" href="wishlist.html">
+					<span class="icon">
+						1
+					</span>
+					<span class="_text">Избранное</span>
+				</a>
+
+				
+
+			</div>
+		</aside>
+
+	<main class="main site__main about-page" >
+		<section class="about-page__main about-main" style="background-image: url('images/about/main-bg.jpg');">
+			<div class="container">
+				<header class="about-main__header">
+					<h1 class="about-main__title">
+						О компании
+						<span class="_separator"></span>
+						NewTime investment
+					</h1>
+				</header>
+
+				<div class="about-main__body">
+					<div class="about-main__col _left">
+						<div class="about-main__text-block about-text-block _main">
+							<h2 class="about-text-block__title">NewTime Investment - компания лидер</h2>
+							<div class="about-text-block__content typography">
+								<p>NewTime investment - международная компания с филиалами в разных странах мира. Предлагаем весь спектр услуг на рынке продаж и аренды жилой и коммерческой недвижимости в Турции.</p>
+							</div>
+						</div>
+						<div class="about-main__text-block about-text-block _secondary">
+							<h2 class="about-text-block__title _orange">Почему мы?</h2>
+							<div class="about-text-block__content typography">
+								<p>В совершенстве знаем турецкое законодательство, тщательно проверяем правоустанавливающие документы и несем ответственность за объективность информации представленных на сайте объектов. Вам не придется дополнительно оплачивать услуги адвоката и юриста – мы проконтролируем законность оформления собственности на Ваше имя.</p>
+							</div>
+						</div>
+					</div>
+					<div class="about-main__col _right">
+						<div class="about-main__text-block about-text-block ">
+							<div class="about-text-block__content typography">
+								<p>Мы не просто турецкое агентство недвижимости. </p>
+								<p>NewTime Investment - Ваш профессиональный консультант и помощник в любых вопросах, касающихся выгодных финансовых вложений.</p>
+								<p>Сотрудничаем только с надежными застройщиками Алании. Гарантируем хорошую цену и эксклюзивные условия продажи для многих ликвидных объектов.  Мы всегда выступаем на стороне интересов наших покупателей, следим за четким исполнением договоренностей со стороны продавца в процессе заключения сделки.</p>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<footer class="about-main__footer">
+					<div class="about-main__alert">
+						<div class="about-main__alert-text">
+							Обращайтесь – проконсультируем <br>по любым вопросам.
+						</div>
+						<div class="about-main__alert-title">
+							Наши клиенты для нас – друзья!
+						</div>
+					</div>
+				</footer>
+			</div>
+		</section>
+		<section class="about-page__principles principles" style="background-image: url('images/about/principles-bg.jpg');">
+			<div class="container">
+				<header class="principles__header">
+					<h2 class="principles__title">Наши принципы и ценности</h2>
+				</header>
+				<div class="principles__body">
+					<div class="principles__items">
+						<div class="principles__item">Квалификация <br>и профессионализм</div>
+						<div class="principles__item">Честность <br> без компромиссов</div>
+						<div class="principles__item">Безупречная репутация</div>
+						<div class="principles__item">Прозрачность информации</div>
+						<div class="principles__item">Безопасность <br> и законность операций</div>
+					</div>
+				</div>
+				<div class="principles__footer">
+					<div class="principles__images">
+						<img class="lazy-image principles__bg-image _left" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-src="images/about/principles-bg-image-1.jpg" alt="" width="380">
+						<img class="lazy-image principles__bg-image _right" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-src="images/about/principles-bg-image-2.jpg" alt="" width="404">
+						<img class="lazy-image principles__image" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-src="images/about/principles-image.png" alt="" width="342">
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="about-page__team tema">
+			<div class="container">
+				<header class="team__header">
+					<h2 class="team__title">Наша команда</h2>
+				</header>
+
+				<div class="team__body">
+					<div class="team__grid">
+						<div class="team__col">
+							<article class="team-card">
+								<div class="team-card__container">
+									<figure class="team-card__media">
+										<img class="lazy-image" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-src="images/about/team-image-1.jpg" alt="">
+									</figure>
+									<div class="team-card__body">
+										<header class="team-card__header">
+											<div class="team-card__name">Андрей Егоров</div>
+											<div class="team-card__profession">Руководитель отдела</div>
+										</header>
+
+										<div class="team-card__contacts">
+											<div class="team-card__messangers">
+												<div class="messengers">
+													<a class="messengers__item _telegram" href="tg://resolve?domain=NikName">
+														<svg class="messengers__icon _telegram">
+															<use xlink:href="symbol/sprite.svg#telegram"></use>
+														</svg>
+													</a>
+													<a class="messengers__item _whatsapp" href="https://wa.me/380950000000?text=Здравствуйте.%20Ваше%20сообщение%20для%20менеджера.">
+														<svg class="messengers__icon _whatsapp">
+															<use xlink:href="symbol/sprite.svg#whatsapp"></use>
+														</svg>
+													</a>
+													<a class="messengers__item _viber" href="viber://add?number=380950000000">
+														<svg class="messengers__icon _viber">
+															<use xlink:href="symbol/sprite.svg#viber"></use>
+														</svg>
+													</a>
+												</div>
+											</div>
+											<div class="team-card__phone-list">
+												<a class="team-card__phone" href="tel:+901234567890">+90 123 456 78 90</a>
+											</div>
+											<div class="team-card__email-list">
+												<a class="team-card__email" href="mailto:info@newtimeinvestment.com">info@newtimeinvestment.com</a>
+											</div>
+										</div>
+
+										<div class="team-card__language">
+											Русский, Английский
+										</div>
+									</div>
+								</div>
+							</article>
+						</div>
+						<div class="team__col">
+							<article class="team-card">
+								<div class="team-card__container">
+									<figure class="team-card__media">
+										<img class="lazy-image" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-src="images/about/team-image-2.jpg" alt="">
+									</figure>
+									<div class="team-card__body">
+										<header class="team-card__header">
+											<div class="team-card__name">Кирил Леднев</div>
+											<div class="team-card__profession">Юрист</div>
+										</header>
+
+										<div class="team-card__contacts">
+											<div class="team-card__messangers">
+												<div class="messengers">
+													<a class="messengers__item _telegram" href="tg://resolve?domain=NikName">
+														<svg class="messengers__icon _telegram">
+															<use xlink:href="symbol/sprite.svg#telegram"></use>
+														</svg>
+													</a>
+													<a class="messengers__item _whatsapp" href="https://wa.me/380950000000?text=Здравствуйте.%20Ваше%20сообщение%20для%20менеджера.">
+														<svg class="messengers__icon _whatsapp">
+															<use xlink:href="symbol/sprite.svg#whatsapp"></use>
+														</svg>
+													</a>
+													<a class="messengers__item _viber" href="viber://add?number=380950000000">
+														<svg class="messengers__icon _viber">
+															<use xlink:href="symbol/sprite.svg#viber"></use>
+														</svg>
+													</a>
+												</div>
+											</div>
+											<div class="team-card__phone-list">
+												<a class="team-card__phone" href="tel:+90123 4567890">+90 123 456 78 90</a>
+											</div>
+											<div class="team-card__email-list">
+												<a class="team-card__email" href="mailto:info@newtimeinvestment.com">info@newtimeinvestment.com</a>
+											</div>
+										</div>
+
+										<div class="team-card__language">
+											Русский, Турецкий, Английский
+										</div>
+									</div>
+								</div>
+							</article>
+						</div>
+						<div class="team__col">
+							<article class="team-card">
+								<div class="team-card__container">
+									<figure class="team-card__media">
+										<img class="lazy-image" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-src="images/about/team-image-3.jpg" alt="">
+									</figure>
+									<div class="team-card__body">
+										<header class="team-card__header">
+											<div class="team-card__name">Маргарита Афанасьева</div>
+											<div class="team-card__profession">Переводчик</div>
+										</header>
+
+										<div class="team-card__contacts">
+											<div class="team-card__messangers">
+												<div class="messengers">
+													<a class="messengers__item _telegram" href="tg://resolve?domain=NikName">
+														<svg class="messengers__icon _telegram">
+															<use xlink:href="symbol/sprite.svg#telegram"></use>
+														</svg>
+													</a>
+													<a class="messengers__item _whatsapp" href="https://wa.me/380950000000?text=Здравствуйте.%20Ваше%20сообщение%20для%20менеджера.">
+														<svg class="messengers__icon _whatsapp">
+															<use xlink:href="symbol/sprite.svg#whatsapp"></use>
+														</svg>
+													</a>
+													<a class="messengers__item _viber" href="viber://add?number=380950000000">
+														<svg class="messengers__icon _viber">
+															<use xlink:href="symbol/sprite.svg#viber"></use>
+														</svg>
+													</a>
+												</div>
+											</div>
+											<div class="team-card__phone-list">
+												<a class="team-card__phone" href="tel:+90123 4567890">+90 123 456 78 90</a>
+											</div>
+											<div class="team-card__email-list">
+												<a class="team-card__email" href="mailto:info@newtimeinvestment.com">info@newtimeinvestment.com</a>
+											</div>
+										</div>
+
+										<div class="team-card__language">
+											Русский, Английский
+										</div>
+									</div>
+								</div>
+							</article>
+						</div>
+						<div class="team__col">
+							<article class="team-card">
+								<div class="team-card__container">
+									<figure class="team-card__media">
+										<img class="lazy-image" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-src="images/about/team-image-4.jpg" alt="">
+									</figure>
+									<div class="team-card__body">
+										<header class="team-card__header">
+											<div class="team-card__name">Анастасия Фролова</div>
+											<div class="team-card__profession">Менеджер по продажам</div>
+										</header>
+
+										<div class="team-card__contacts">
+											<div class="team-card__messangers">
+												<div class="messengers">
+													<a class="messengers__item _telegram" href="tg://resolve?domain=NikName">
+														<svg class="messengers__icon _telegram">
+															<use xlink:href="symbol/sprite.svg#telegram"></use>
+														</svg>
+													</a>
+													<a class="messengers__item _whatsapp" href="https://wa.me/380950000000?text=Здравствуйте.%20Ваше%20сообщение%20для%20менеджера.">
+														<svg class="messengers__icon _whatsapp">
+															<use xlink:href="symbol/sprite.svg#whatsapp"></use>
+														</svg>
+													</a>
+													<a class="messengers__item _viber" href="viber://add?number=380950000000">
+														<svg class="messengers__icon _viber">
+															<use xlink:href="symbol/sprite.svg#viber"></use>
+														</svg>
+													</a>
+												</div>
+											</div>
+											<div class="team-card__phone-list">
+												<a class="team-card__phone" href="tel:+90123 4567890">+90 123 456 78 90</a>
+											</div>
+											<div class="team-card__email-list">
+												<a class="team-card__email" href="mailto:info@newtimeinvestment.com">info@newtimeinvestment.com</a>
+											</div>
+										</div>
+
+										<div class="team-card__language">
+											Русский
+										</div>
+									</div>
+								</div>
+							</article>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="about-page__contacts contacts" style="background-image: url('images/about/contacts-bg.jpg');">
+			<div class="container">
+				<header class="contacts__header">
+					<h2 class="contacts__title">Контакты</h2>
+				</header>
+				<div class="contacts__body">
+					<div class="contacts__controll">
+						<button class="button contacts__button _active">
+							<span>Аланья, Турция</span>
+							<svg class="_icon">
+								<use xlink:href="symbol/sprite.svg#arrow-classic"></use>
+							</svg>
+						</button>
+						<button class="button contacts__button">
+							<span>Москва, Россия</span>
+							<svg class="_icon">
+								<use xlink:href="symbol/sprite.svg#arrow-classic"></use>
+							</svg>
+						</button>
+						<button class="button contacts__button">
+							<span>Харьков, Украина</span>
+							<svg class="_icon">
+								<use xlink:href="symbol/sprite.svg#arrow-classic"></use>
+							</svg>
+						</button>
+					</div>
+					<div class="contacts__content">
+						<div class="contacts__content-card contact-card _active">
+							<div class="contact-card__container">
+								<div class="contact-card__main">
+									<div class="contact-card__contacts">
+										<div class="contact-card__messangers-phones">
+											<div class="contact-card__messangers">
+												<div class="messengers">
+													<a class="messengers__item _telegram" href="tg://resolve?domain=NikName">
+														<svg class="messengers__icon _telegram">
+															<use xlink:href="symbol/sprite.svg#telegram-fill"></use>
+														</svg>
+													</a>
+													<a class="messengers__item _whatsapp" href="https://wa.me/380950000000?text=Здравствуйте.%20Ваше%20сообщение%20для%20менеджера.">
+														<svg class="messengers__icon _whatsapp">
+															<use xlink:href="symbol/sprite.svg#whatsapp-fill"></use>
+														</svg>
+													</a>
+													<a class="messengers__item _viber" href="viber://add?number=380950000000">
+														<svg class="messengers__icon _viber">
+															<use xlink:href="symbol/sprite.svg#viber-fill"></use>
+														</svg>
+													</a>
+												</div>
+											</div>
+											<div class="contact-card__phone-list">
+												<a class="contact-card__phone" href="tel:+1234567890">+333 456 78 90</a>
+												<!-- <a class="contact-card__phone" href="tel:+1234567890">+333 456 78 90</a> -->
+											</div>
+										</div>
+										<div class="contact-card__email-list">
+											<a class="contact-card__email" href="mailto:info@newtimeinvestment.com">
+												<svg class="_icon">
+													<use xlink:href="symbol/sprite.svg#mail-fill"></use>
+												</svg>
+												info@newtimeinvestment.com
+											</a>
+										</div>
+										<div class="contact-card__address-list">
+											<span class="contact-card__address">
+												<svg class="_icon">
+													<use xlink:href="symbol/sprite.svg#location-fill"></use>
+												</svg>
+												<span>Çarşı, Damlataş Cd. No:81, 07400 Alanya/Antalya, Turkey</span>
+											</span>
+										</div>
+									</div>
+									<div class="contact-card__worktime">
+										<div class="contact-card__block-title">Рабочие часы:</div>
+										<div class="contact-card__worktime-list">
+											<div class="contact-card__worktime-item">
+												<span>ПН-ПТ:</span>
+												9:00 - 19:00;
+											</div>
+											<div class="contact-card__worktime-item">
+												<span>СБ:</span>
+												9:00 - 19:00;
+											</div>
+											<div class="contact-card__worktime-item">
+												<span>ВС:</span>
+												Выходной
+											</div>
+										</div>
+									</div>
+									<div class="contact-card__socialmedia">
+										<div class="contact-card__block-title">Наши соц.сети:</div>
+										<div class="socialmedia">
+											<a class="socialmedia__link" href="#" target="blank">
+												<svg class="socialmedia__icon icon-youtube">
+													<use xlink:href="symbol/sprite.svg#youtube"></use>
+												</svg>
+											</a>
+											<a class="socialmedia__link" href="#" target="blank">
+												<svg class="socialmedia__icon icon-instagram">
+													<use xlink:href="symbol/sprite.svg#instagram-square"></use>
+												</svg>
+											</a>
+											<a class="socialmedia__link" href="#" target="blank">
+												<svg class="socialmedia__icon icon-facebook">
+													<use xlink:href="symbol/sprite.svg#facebook-square"></use>
+												</svg>
+											</a>
+											<a class="socialmedia__link" href="#" target="blank">
+												<svg class="socialmedia__icon icon-telegram">
+													<use xlink:href="symbol/sprite.svg#telegram-square"></use>
+												</svg>
+												Telegram-канал
+											</a>
+										</div>
+									</div>
+									<div class="contact-card__callback">
+										<button class="button-primary" >Связаться с нами</a>
+									</div>
+								</div>
+								<div class="contact-card__map js-contacts-map" data-lat="36.5433118" data-lng="31.986317" >
+
+								</div>
+							</div>
+						</div>
+						<div class="contacts__content-card contact-card">
+							<div class="contact-card__container">
+								<div class="contact-card__main">
+									<div class="contact-card__contacts">
+										<div class="contact-card__messangers-phones">
+											<div class="contact-card__messangers">
+												<div class="messengers">
+													<a class="messengers__item _telegram" href="tg://resolve?domain=NikName">
+														<svg class="messengers__icon _telegram">
+															<use xlink:href="symbol/sprite.svg#telegram-fill"></use>
+														</svg>
+													</a>
+													<a class="messengers__item _whatsapp" href="https://wa.me/380950000000?text=Здравствуйте.%20Ваше%20сообщение%20для%20менеджера.">
+														<svg class="messengers__icon _whatsapp">
+															<use xlink:href="symbol/sprite.svg#whatsapp-fill"></use>
+														</svg>
+													</a>
+													<a class="messengers__item _viber" href="viber://add?number=380950000000">
+														<svg class="messengers__icon _viber">
+															<use xlink:href="symbol/sprite.svg#viber-fill"></use>
+														</svg>
+													</a>
+												</div>
+											</div>
+											<div class="contact-card__phone-list">
+												<a class="contact-card__phone" href="tel:+1234567890">+123 456 78 90</a>
+											</div>
+										</div>
+										<div class="contact-card__email-list">
+											<a class="contact-card__email" href="mailto:">
+												<svg class="_icon">
+													<use xlink:href="symbol/sprite.svg#mail-fill"></use>
+												</svg>
+												info@newtimeinvestment.com
+											</a>
+										</div>
+										<div class="contact-card__address-list">
+											<span class="contact-card__address">
+												<svg class="_icon">
+													<use xlink:href="symbol/sprite.svg#location-fill"></use>
+												</svg>
+												Çarşı, Damlataş Cd. No:81, 07400 Alanya/Antalya, Turkey
+											</span>
+										</div>
+									</div>
+									<div class="contact-card__worktime">
+										<div class="contact-card__block-title">Рабочие часы:</div>
+										<div class="contact-card__worktime-list">
+											<div class="contact-card__worktime-item">
+												<span>ПН-ПТ:</span>
+												9:00 - 19:00;
+											</div>
+											<div class="contact-card__worktime-item">
+												<span>СБ:</span>
+												9:00 - 19:00;
+											</div>
+											<div class="contact-card__worktime-item">
+												<span>ВС:</span>
+												Выходной
+											</div>
+										</div>
+									</div>
+									<div class="contact-card__socialmedia">
+										<div class="contact-card__block-title">Наши соц.сети:</div>
+										<div class="socialmedia">
+											<a class="socialmedia__link" href="#" target="blank">
+												<svg class="socialmedia__icon icon-youtube">
+													<use xlink:href="symbol/sprite.svg#youtube"></use>
+												</svg>
+											</a>
+											<a class="socialmedia__link" href="#" target="blank">
+												<svg class="socialmedia__icon icon-instagram">
+													<use xlink:href="symbol/sprite.svg#instagram-square"></use>
+												</svg>
+											</a>
+											<a class="socialmedia__link" href="#" target="blank">
+												<svg class="socialmedia__icon icon-facebook">
+													<use xlink:href="symbol/sprite.svg#facebook-square"></use>
+												</svg>
+											</a>
+											<a class="socialmedia__link" href="#" target="blank">
+												<svg class="socialmedia__icon icon-telegram">
+													<use xlink:href="symbol/sprite.svg#telegram-square"></use>
+												</svg>
+												Telegram-канал
+											</a>
+										</div>
+									</div>
+									<div class="contact-card__callback">
+										<button class="button-primary" >Связаться с нами</a>
+									</div>
+								</div>
+								<div class="contact-card__map js-contacts-map" data-lat="55.7253423" data-lng="37.5172735" >
+
+								</div>
+							</div>
+						</div>
+						<div class="contacts__content-card contact-card">
+							<div class="contact-card__container">
+								<div class="contact-card__main">
+									<div class="contact-card__contacts">
+										<div class="contact-card__messangers-phones">
+											<div class="contact-card__messangers">
+												<div class="messengers">
+													<a class="messengers__item _telegram" href="tg://resolve?domain=NikName">
+														<svg class="messengers__icon _telegram">
+															<use xlink:href="symbol/sprite.svg#telegram-fill"></use>
+														</svg>
+													</a>
+													<a class="messengers__item _whatsapp" href="https://wa.me/380950000000?text=Здравствуйте.%20Ваше%20сообщение%20для%20менеджера.">
+														<svg class="messengers__icon _whatsapp">
+															<use xlink:href="symbol/sprite.svg#whatsapp-fill"></use>
+														</svg>
+													</a>
+													<a class="messengers__item _viber" href="viber://add?number=380950000000">
+														<svg class="messengers__icon _viber">
+															<use xlink:href="symbol/sprite.svg#viber-fill"></use>
+														</svg>
+													</a>
+												</div>
+											</div>
+											<div class="contact-card__phone-list">
+												<a class="contact-card__phone" href="tel:+1234567890">+88 456 78 90</a>
+											</div>
+										</div>
+										<div class="contact-card__email-list">
+											<a class="contact-card__email" href="mailto:">
+												<svg class="_icon">
+													<use xlink:href="symbol/sprite.svg#mail-fill"></use>
+												</svg>
+												info@newtimeinvestment.com
+											</a>
+										</div>
+										<div class="contact-card__address-list">
+											<span class="contact-card__address">
+												<svg class="_icon">
+													<use xlink:href="symbol/sprite.svg#location-fill"></use>
+												</svg>
+												Çarşı, Damlataş Cd. No:81, 07400 Alanya/Antalya, Turkey
+											</span>
+										</div>
+									</div>
+									<div class="contact-card__worktime">
+										<div class="contact-card__block-title">Рабочие часы:</div>
+										<div class="contact-card__worktime-list">
+											<div class="contact-card__worktime-item">
+												<span>ПН-ПТ:</span>
+												9:00 - 19:00;
+											</div>
+											<div class="contact-card__worktime-item">
+												<span>СБ:</span>
+												9:00 - 19:00;
+											</div>
+											<div class="contact-card__worktime-item">
+												<span>ВС:</span>
+												Выходной
+											</div>
+										</div>
+									</div>
+									<div class="contact-card__socialmedia">
+										<div class="contact-card__block-title">Наши соц.сети:</div>
+										<div class="socialmedia">
+											<a class="socialmedia__link" href="#" target="blank">
+												<svg class="socialmedia__icon icon-youtube">
+													<use xlink:href="symbol/sprite.svg#youtube"></use>
+												</svg>
+											</a>
+											<a class="socialmedia__link" href="#" target="blank">
+												<svg class="socialmedia__icon icon-instagram">
+													<use xlink:href="symbol/sprite.svg#instagram-square"></use>
+												</svg>
+											</a>
+											<a class="socialmedia__link" href="#" target="blank">
+												<svg class="socialmedia__icon icon-facebook">
+													<use xlink:href="symbol/sprite.svg#facebook-square"></use>
+												</svg>
+											</a>
+											<a class="socialmedia__link" href="#" target="blank">
+												<svg class="socialmedia__icon icon-telegram">
+													<use xlink:href="symbol/sprite.svg#telegram-square"></use>
+												</svg>
+												Telegram-канал
+											</a>
+										</div>
+									</div>
+									<div class="contact-card__callback">
+										<button class="button-primary" >Связаться с нами</a>
+									</div>
+								</div>
+								<div class="contact-card__map js-contacts-map" data-lat="49.9875424" data-lng="36.237738" >
+
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="about-page__bank-info bank-info">
+			<div class="container">
+				<div class="bank-info__row">
+					<div class="bank-info__col">
+						<article class="bank-card">
+							<div class="bank-card__header">
+								<h3 class="bank-card__title">Реквизиты компании</h3>
+							</div>
+							<div class="bank-card__body">
+								<ul class="bank-card__info-list">
+									<li class="bank-card__info-item">
+										<span>Название компании:</span>
+										NewTimeInvestment
+									</li>
+									<li class="bank-card__info-item">
+										<span>Адрес компании:</span>
+										Çarşı, Damlataş Cd. No:81, 07400 Alanya/Antalya, Turkey 
+									</li>
+									<li class="bank-card__info-item">
+										<span>Номер телефона:</span>
+										+90 (123) 456 78 90
+									</li>
+									<li class="bank-card__info-item">
+										<span>Идентификационный номер (ИНН компании):</span>
+										9379992
+									</li>
+									<li class="bank-card__info-item">
+										<span>Налоговый департамент:</span>
+										ALANYA V.D.
+									</li>
+								</ul>
+							</div>
+						</article>
+					</div>
+					<div class="bank-info__col">
+						<article class="bank-card">
+							<div class="bank-card__header">
+								<h3 class="bank-card__title">Банковские реквизиты</h3>
+							</div>
+							<div class="bank-card__body">
+								<ul class="bank-card__info-list">
+									<li class="bank-card__info-item">
+										<span>Филиал банка (Branch of the bank):</span>
+										Ziraat Bankası
+									</li>
+									<li class="bank-card__info-item">
+										<span>Ибан (Iban):</span>
+										TR11 0011 1100 0110 1110 0000 01 
+									</li>
+									<li class="bank-card__info-item">
+										<span>Клиентский номер (Hesap numarası):</span>
+										49-11-1784444-53
+									</li>
+									<li class="bank-card__info-item">
+										<span>Адрес отделения банка (bank address):</span>
+										Oba, Gazi Paşa Yolu, 07460 Alanya/Antalya, Турция
+									</li>
+									<li class="bank-card__info-item">
+										<span>Отделение банка (bank branch):</span>
+										Алания
+									</li>
+								</ul>
+							</div>
+						</article>
+					</div>
+				</div>
+			</div>
+		</section>
+	</main>
+
+		<footer class="footer site__footer" style="background-image: url('images/footer-bg.jpg');">
+			<div class="container footer__container">
+				<div class="footer__logo">
+					<a href="front-page.html" class="site-logo">
+						<img src="images/new-time-logo.svg" alt="New Time Investment Logo" width="151">
+					</a>
+				</div>
+				<div class="footer__main">
+					<div class="footer__nav">
+						<nav class="footer-nav">
+							<a class="footer-nav__link" href="/catalog.html">Католог</a>
+							<a class="footer-nav__link" href="/about.html">О компании</a>
+							<a class="footer-nav__link" href="/services.html">Услуги</a>
+						</nav>
+					</div>
+					<div class="footer__contacts">
+						<div class="footer__messenger">
+							<div class="messengers">
+								<a class="messengers__item _telegram" href="tg://resolve?domain=NikName">
+									<svg class="messengers__icon _telegram">
+										<use xlink:href="symbol/sprite.svg#telegram"></use>
+									</svg>
+								</a>
+								<a class="messengers__item _whatsapp" href="https://wa.me/380950000000?text=Здравствуйте.%20Ваше%20сообщение%20для%20менеджера.">
+									<svg class="messengers__icon _whatsapp">
+										<use xlink:href="symbol/sprite.svg#whatsapp"></use>
+									</svg>
+								</a>
+								<a class="messengers__item _viber" href="viber://add?number=380950000000">
+									<svg class="messengers__icon _viber">
+										<use xlink:href="symbol/sprite.svg#viber"></use>
+									</svg>
+								</a>
+							</div>
+						</div>
+						<div class="footer__phone-list phone-list">
+							<a class="phone-list__link" href="tel:+90000000000">
+								<img class="phone-list__icon" src="icons/flag-turkey.svg" alt="Flag Turkey" width="26">
+								+99 999 99 99 999
+							</a>
+							<a class="phone-list__link" href="tel:+90000000000">
+								<img class="phone-list__icon" src="icons/flag-ukraine.svg" alt="Flag Ukrain" width="26">
+								+99 999 99 99 999
+							</a>
+							<a class="phone-list__link" href="tel:+90000000000">
+								<img class="phone-list__icon" src="icons/flag-russia.svg" alt="Flag Russia" width="26">
+								+99 999 99 99 999
+							</a>
+						</div>
+						<div class="footer__email">
+							<a class="footer__email-link" href="mailto:info@newtimeinvestment.com">
+								<svg class="_icon">
+									<use xlink:href="symbol/sprite.svg#email"></use>
+								</svg>
+								info@newtimeinvestment.com
+							</a>
+						</div>
+						<div class="footer__address">
+							<a href="https://goo.gl/maps/twFADnKD2JD1iSQm9" target="_blank" class="footer__address-link">
+								<svg class="_icon">
+									<use xlink:href="symbol/sprite.svg#map-marker"></use>
+								</svg>
+								Çarşı, Damlataş Cd. No:81, 07400 Alanya/Antalya, Turkey
+							</a>
+						</div>
+					</div>
+					<div class="footer__socialmedia">
+						<div class="socialmedia">
+							<a class="socialmedia__link" href="#" target="blank">
+								<svg class="socialmedia__icon icon-youtube">
+									<use xlink:href="symbol/sprite.svg#youtube"></use>
+								</svg>
+							</a>
+							<a class="socialmedia__link" href="#" target="blank">
+								<svg class="socialmedia__icon icon-instagram">
+									<use xlink:href="symbol/sprite.svg#instagram-square"></use>
+								</svg>
+							</a>
+							<a class="socialmedia__link" href="#" target="blank">
+								<svg class="socialmedia__icon icon-facebook">
+									<use xlink:href="symbol/sprite.svg#facebook-square"></use>
+								</svg>
+							</a>
+							<a class="socialmedia__link" href="#" target="blank">
+								<svg class="socialmedia__icon icon-telegram">
+									<use xlink:href="symbol/sprite.svg#telegram-square"></use>
+								</svg>
+								Telegram-канал
+							</a>
+						</div>
+					</div>
+					<div class="footer__copyrigts">
+						<div class="copyrigts">Copyright 2021. NewTimeInvestment</div>
+						<a class="privacy-policy" href="/privacy-police.html" >Политика конфиденциальности</a>
+						
+					</div>
+				</div>
+			</div>
+		</footer>
+
+		<div class="modals site__modals">
+
+	<!-- Feedback -->
+	<div class="modal-main" id="modal-main">
+		<div class="modal-main__container">
+			<div class="modal-main__header">
+				<div class="modal-main__title">Перезвоните мне</div>
+				<div class="modal-main__description">Для получения подробной информации заполните форму и наш менеджер свяжется с Вами в ближайшее время</div>
+			</div>
+			<div class="modal-main__body">
+				<form class="form modal-form js-validate" autocomplete="off">
+					<div class="form__row">
+						<div class="form__group">
+							<input class="form__input" type="text" name="mm-name" placeholder="Ваше имя" required>
+						</div>
+					</div>
+					<div class="form__row">
+						<div class="form__group">
+							<input class="form__input js-phone-mask" type="text" name="mm-phone" placeholder="Ваш телефон" required>
+						</div>
+					</div>
+					<div class="form__row">
+						<button class="button button-primary" >Оставить заявку</button>
+					</div>
+				</form>
+			</div>
+		</div>
+		<button class="button moda-close" data-fancybox-close>
+			<svg class="_icon">
+				<use xlink:href="symbol/sprite.svg#plus"></use>
+			</svg>
+		</button>
+	</div>
+
+	<!-- hot-proposals -->
+	<div class="modal-main" id="hot-proposals">
+		<div class="modal-main__container">
+			<div class="modal-main__header">
+				<div class="modal-main__title">Прайс-лист горячих предложений</div>
+				<div class="modal-main__description">Для получения подробной информации заполните форму и наш менеджер свяжется с Вами в ближайшее время</div>
+			</div>
+			<div class="modal-main__body">
+				<form class="form modal-form js-validate" autocomplete="off">
+					<div class="form__row">
+						<div class="form__group">
+							<input class="form__input" type="text" name="hp-name" placeholder="Ваше имя" required>
+						</div>
+					</div>
+					<div class="form__row">
+						<div class="form__group">
+							<input class="form__input js-phone-mask" type="text" name="hp-phone" placeholder="Ваш телефон" required>
+						</div>
+					</div>
+					<div class="form__row">
+						<div class="form__group">
+							<input class="form__input" type="email" name="hp-email" placeholder="Email" required>
+						</div>
+					</div>
+					<div class="form__row">
+						<div class="form__group">
+							<textarea class="form__textarea" name="hp-textarea" placeholder="Ваш вопрос"></textarea>
+						</div>
+					</div>
+					<div class="form__row">
+						<button class="button button-primary" >Оставить заявку</button>
+					</div>
+				</form>
+			</div>
+		</div>
+		<button class="button moda-close" data-fancybox-close>
+			<svg class="_icon">
+				<use xlink:href="symbol/sprite.svg#plus"></use>
+			</svg>
+		</button>
+	</div>
+
+	<!-- new-objects -->
+	<div class="modal-main" id="new-objects">
+		<div class="modal-main__container">
+			<div class="modal-main__header">
+				<div class="modal-main__title">Прайс-лист новых объектов</div>
+				<div class="modal-main__description">Для получения подробной информации заполните форму и наш менеджер свяжется с Вами в ближайшее время</div>
+			</div>
+			<div class="modal-main__body">
+				<form class="form modal-form js-validate" autocomplete="off">
+					<div class="form__row">
+						<div class="form__group">
+							<input class="form__input" type="text" name="no-name" placeholder="Ваше имя" required>
+						</div>
+					</div>
+					<div class="form__row">
+						<div class="form__group">
+							<input class="form__input js-phone-mask" type="text" name="no-phone" placeholder="Ваш телефон" required>
+						</div>
+					</div>
+					<div class="form__row">
+						<div class="form__group">
+							<input class="form__input" type="email" name="no-email" placeholder="Email" required>
+						</div>
+					</div>
+					<div class="form__row">
+						<div class="form__group">
+							<textarea class="form__textarea" name="no-textarea" placeholder="Ваш вопрос"></textarea>
+						</div>
+					</div>
+					<div class="form__row">
+						<button class="button button-primary" >Оставить заявку</button>
+					</div>
+				</form>
+			</div>
+		</div>
+		<button class="button moda-close" data-fancybox-close>
+			<svg class="_icon">
+				<use xlink:href="symbol/sprite.svg#plus"></use>
+			</svg>
+		</button>
+	</div>
+
+	<!-- top-objects -->
+	<div class="modal-main" id="top-objects">
+		<div class="modal-main__container">
+			<div class="modal-main__header">
+				<div class="modal-main__title">Прайс-лист топ-объектов</div>
+				<div class="modal-main__description">Для получения подробной информации заполните форму и наш менеджер свяжется с Вами в ближайшее время</div>
+			</div>
+			<div class="modal-main__body">
+				<form class="form modal-form js-validate" autocomplete="off">
+					<div class="form__row">
+						<div class="form__group">
+							<input class="form__input" type="text" name="to-name" placeholder="Ваше имя" required>
+						</div>
+					</div>
+					<div class="form__row">
+						<div class="form__group">
+							<input class="form__input js-phone-mask" type="text" name="to-phone" placeholder="Ваш телефон" required>
+						</div>
+					</div>
+					<div class="form__row">
+						<div class="form__group">
+							<input class="form__input" type="email" name="to-email" placeholder="Email" required>
+						</div>
+					</div>
+					<div class="form__row">
+						<div class="form__group">
+							<textarea class="form__textarea" name="to-textarea" placeholder="Ваш вопрос"></textarea>
+						</div>
+					</div>
+					<div class="form__row">
+						<button class="button button-primary" >Оставить заявку</button>
+					</div>
+				</form>
+			</div>
+		</div>
+		<button class="button moda-close" data-fancybox-close>
+			<svg class="_icon">
+				<use xlink:href="symbol/sprite.svg#plus"></use>
+			</svg>
+		</button>
+	</div>
+
+	<!-- invest-objects -->
+	<div class="modal-main" id="invest-objects">
+		<div class="modal-main__container">
+			<div class="modal-main__header">
+				<div class="modal-main__title">Прайс-лист инвестиционных объектов</div>
+				<div class="modal-main__description">Для получения подробной информации заполните форму и наш менеджер свяжется с Вами в ближайшее время</div>
+			</div>
+			<div class="modal-main__body">
+				<form class="form modal-form js-validate" autocomplete="off">
+					<div class="form__row">
+						<div class="form__group">
+							<input class="form__input" type="text" name="io-name" placeholder="Ваше имя" required>
+						</div>
+					</div>
+					<div class="form__row">
+						<div class="form__group">
+							<input class="form__input js-phone-mask" type="text" name="io-phone" placeholder="Ваш телефон" required>
+						</div>
+					</div>
+					<div class="form__row">
+						<div class="form__group">
+							<input class="form__input" type="email" name="io-email" placeholder="Email" required>
+						</div>
+					</div>
+					<div class="form__row">
+						<div class="form__group">
+							<textarea class="form__textarea" name="io-textarea" placeholder="Ваш вопрос"></textarea>
+						</div>
+					</div>
+					<div class="form__row">
+						<button class="button button-primary" >Оставить заявку</button>
+					</div>
+				</form>
+			</div>
+		</div>
+		<button class="button moda-close" data-fancybox-close>
+			<svg class="_icon">
+				<use xlink:href="symbol/sprite.svg#plus"></use>
+			</svg>
+		</button>
+	</div>
+
+	<!-- tour -->
+	<div class="modal-main" id="modal-tour">
+		<div class="modal-main__container">
+			<div class="modal-main__header">
+				<div class="modal-main__title">Заказать ознакомительный тур</div>
+				<div class="modal-main__description">Для получения подробной информации заполните форму и наш менеджер свяжется с Вами в ближайшее время</div>
+			</div>
+			<div class="modal-main__body">
+				<form class="form modal-form js-validate" autocomplete="off">
+					<div class="form__row">
+						<div class="form__group">
+							<input class="form__input" type="text" name="mt-name" placeholder="Ваше имя" required>
+						</div>
+					</div>
+					<div class="form__row">
+						<div class="form__group">
+							<input class="form__input js-phone-mask" type="text" name="mt-phone" placeholder="Ваш телефон" required>
+						</div>
+					</div>
+					<div class="form__row">
+						<div class="form__group">
+							<input class="form__input" type="email" name="mt-email" placeholder="Email" required>
+						</div>
+					</div>
+					<div class="form__row">
+						<div class="form__group">
+							<textarea class="form__textarea" name="mt-textarea" placeholder="Ваш вопрос"></textarea>
+						</div>
+					</div>
+					<div class="form__row">
+						<button class="button button-primary" >Оставить заявку</button>
+					</div>
+				</form>
+			</div>
+		</div>
+		<button class="button moda-close" data-fancybox-close>
+			<svg class="_icon">
+				<use xlink:href="symbol/sprite.svg#plus"></use>
+			</svg>
+		</button>
+	</div>
+
+	<!-- online tour -->
+	<div class="modal-main" id="modal-online-tour">
+		<div class="modal-main__container">
+			<div class="modal-main__header">
+				<div class="modal-main__title">Заказать онлайн просмотр</div>
+				<div class="modal-main__description">Для получения подробной информации заполните форму и наш менеджер свяжется с Вами в ближайшее время</div>
+			</div>
+			<div class="modal-main__body">
+				<form class="form modal-form js-validate" autocomplete="off">
+					<div class="form__row">
+						<div class="form__group">
+							<input class="form__input" type="text" name="mot-name" placeholder="Ваше имя" required>
+						</div>
+					</div>
+					<div class="form__row">
+						<div class="form__group">
+							<input class="form__input js-phone-mask" type="text" name="mot-phone" placeholder="Ваш телефон" required>
+						</div>
+					</div>
+					<div class="form__row">
+						<div class="form__group">
+							<input class="form__input" type="email" name="mot-email" placeholder="Email" required>
+						</div>
+					</div>
+					<div class="form__row">
+						<div class="form__group">
+							<textarea class="form__textarea" name="mot-textarea" placeholder="Ваш вопрос"></textarea>
+						</div>
+					</div>
+					<div class="form__row">
+						<button class="button button-primary" >Оставить заявку</button>
+					</div>
+				</form>
+			</div>
+		</div>
+		<button class="button moda-close" data-fancybox-close>
+			<svg class="_icon">
+				<use xlink:href="symbol/sprite.svg#plus"></use>
+			</svg>
+		</button>
+	</div>
+
+	<!-- credit consultation -->
+	<div class="modal-main" id="modal-consultation">
+		<div class="modal-main__container">
+			<div class="modal-main__header">
+				<div class="modal-main__title">Получить консультацию <br> по кредиту</div>
+				<div class="modal-main__description">Для получения подробной информации заполните форму и наш менеджер свяжется с Вами в ближайшее время</div>
+			</div>
+			<div class="modal-main__body">
+				<form class="form modal-form js-validate" autocomplete="off">
+					<div class="form__row">
+						<div class="form__group">
+							<input class="form__input" type="text" name="mco-name" placeholder="Ваше имя" required>
+						</div>
+					</div>
+					<div class="form__row">
+						<div class="form__group">
+							<input class="form__input js-phone-mask" type="text" name="mco-phone" placeholder="Ваш телефон" required>
+						</div>
+					</div>
+					<div class="form__row">
+						<div class="form__group">
+							<input class="form__input" type="email" name="mco-email" placeholder="Email" required>
+						</div>
+					</div>
+					<div class="form__row">
+						<div class="form__group">
+							<textarea class="form__textarea" name="mco-textarea" placeholder="Ваш вопрос"></textarea>
+						</div>
+					</div>
+					<div class="form__row">
+						<button class="button button-primary" >Оставить заявку</button>
+					</div>
+				</form>
+			</div>
+		</div>
+		<button class="button moda-close" data-fancybox-close>
+			<svg class="_icon">
+				<use xlink:href="symbol/sprite.svg#plus"></use>
+			</svg>
+		</button>
+	</div>
+
+	<!-- investment -->
+	<div class="modal-main" id="modal-investment">
+		<div class="modal-main__container">
+			<div class="modal-main__header">
+				<div class="modal-main__title">Получить консультацию <br> по инвестированию</div>
+				<div class="modal-main__description">Для получения подробной информации заполните форму и наш менеджер свяжется с Вами в ближайшее время</div>
+			</div>
+			<div class="modal-main__body">
+				<form class="form modal-form js-validate" autocomplete="off">
+					<div class="form__row">
+						<div class="form__group">
+							<input class="form__input" type="text" name="min-name" placeholder="Ваше имя" required>
+						</div>
+					</div>
+					<div class="form__row">
+						<div class="form__group">
+							<input class="form__input js-phone-mask" type="text" name="min-phone" placeholder="Ваш телефон" required>
+						</div>
+					</div>
+					<div class="form__row">
+						<div class="form__group">
+							<input class="form__input" type="email" name="min-email" placeholder="Email" required>
+						</div>
+					</div>
+					<div class="form__row">
+						<div class="form__group">
+							<textarea class="form__textarea" name="min-textarea" placeholder="Ваш вопрос"></textarea>
+						</div>
+					</div>
+					<div class="form__row">
+						<button class="button button-primary" >Оставить заявку</button>
+					</div>
+				</form>
+			</div>
+		</div>
+		<button class="button moda-close" data-fancybox-close>
+			<svg class="_icon">
+				<use xlink:href="symbol/sprite.svg#plus"></use>
+			</svg>
+		</button>
+	</div>
+
+	<!-- question -->
+	<div class="modal-main" id="modal-question">
+		<div class="modal-main__container">
+			<div class="modal-main__header">
+				<div class="modal-main__title">Задать свой вопрос</div>
+				<div class="modal-main__description">Для получения подробной информации заполните форму и наш менеджер свяжется с Вами в ближайшее время</div>
+			</div>
+			<div class="modal-main__body">
+				<form class="form modal-form js-validate" autocomplete="off">
+					<div class="form__row">
+						<div class="form__group">
+							<input class="form__input" type="text" name="qu-name" placeholder="Ваше имя" required>
+						</div>
+					</div>
+					<div class="form__row">
+						<div class="form__group">
+							<input class="form__input js-phone-mask" type="text" name="qu-phone" placeholder="Ваш телефон" required>
+						</div>
+					</div>
+					<div class="form__row">
+						<div class="form__group">
+							<input class="form__input" type="email" name="qu-email" placeholder="Email" required>
+						</div>
+					</div>
+					<div class="form__row">
+						<div class="form__group">
+							<textarea class="form__textarea" name="qu-textarea" placeholder="Ваш вопрос"></textarea>
+						</div>
+					</div>
+					<div class="form__row">
+						<button class="button button-primary" >Задать вопрос</button>
+					</div>
+				</form>
+			</div>
+		</div>
+		<button class="button moda-close" data-fancybox-close>
+			<svg class="_icon">
+				<use xlink:href="symbol/sprite.svg#plus"></use>
+			</svg>
+		</button>
+	</div>
+
+	<!-- contuct-us -->
+	<div class="modal-main" id="contuct-us">
+		<div class="modal-main__container">
+			<div class="modal-main__header">
+				<div class="modal-main__title">Связаться с нами</div>
+				<div class="modal-main__description">Для получения подробной информации заполните форму и наш менеджер свяжется с Вами в ближайшее время</div>
+			</div>
+			<div class="modal-main__body">
+				<form class="form modal-form js-validate" autocomplete="off">
+					<div class="form__row">
+						<div class="form__group">
+							<input class="form__input" type="text" name="ca-name" placeholder="Ваше имя" required>
+						</div>
+					</div>
+					<div class="form__row">
+						<div class="form__group">
+							<input class="form__input js-phone-mask" type="text" name="ca-phone" placeholder="Ваш телефон" required>
+						</div>
+					</div>
+					<div class="form__row">
+						<div class="form__group">
+							<input class="form__input" type="email" name="ca-email" placeholder="Email" required>
+						</div>
+					</div>
+					<div class="form__row">
+						<div class="form__group">
+							<textarea class="form__textarea" name="ca-textarea" placeholder="Ваш вопрос"></textarea>
+						</div>
+					</div>
+					<div class="form__row">
+						<button class="button button-primary" >Оставить заявку</button>
+					</div>
+				</form>
+			</div>
+		</div>
+		<button class="button moda-close" data-fancybox-close>
+			<svg class="_icon">
+				<use xlink:href="symbol/sprite.svg#plus"></use>
+			</svg>
+		</button>
+	</div>
+	
+</div>
+	</div>
+
+	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAnmv8rDSzIL4RVE5EBt6Kt4hqdFXU2mA4" defer></script>
+	<script src="js/vendor.js"></script>
+	<script src="js/index.js"></script>
+	</body>
+
+</html>
